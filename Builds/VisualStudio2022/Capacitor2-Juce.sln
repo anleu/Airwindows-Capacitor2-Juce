@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio Version 17
+
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Capacitor2-Juce - Standalone Plugin", "Capacitor2-Juce_StandalonePlugin.vcxproj", "{65473B69-2468-6FCE-187A-999B7BD1EBE8}"
+	ProjectSection(ProjectDependencies) = postProject
+		{AA8C175F-F5F9-8C78-6A3F-CE2129AEC729} = {AA8C175F-F5F9-8C78-6A3F-CE2129AEC729}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Capacitor2-Juce - VST3", "Capacitor2-Juce_VST3.vcxproj", "{9855C0C2-625C-3453-326B-A4E23F181CC7}"
+	ProjectSection(ProjectDependencies) = postProject
+		{AA8C175F-F5F9-8C78-6A3F-CE2129AEC729} = {AA8C175F-F5F9-8C78-6A3F-CE2129AEC729}
+		{F1065C2A-FD27-8842-F736-73BCC3DA4F83} = {F1065C2A-FD27-8842-F736-73BCC3DA4F83}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Capacitor2-Juce - Shared Code", "Capacitor2-Juce_SharedCode.vcxproj", "{AA8C175F-F5F9-8C78-6A3F-CE2129AEC729}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Capacitor2-Juce - VST3 Manifest Helper", "Capacitor2-Juce_VST3ManifestHelper.vcxproj", "{F1065C2A-FD27-8842-F736-73BCC3DA4F83}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9855C0C2-625C-3453-326B-A4E23F181CC7}.Debug|x64.ActiveCfg = Debug|x64
+		{9855C0C2-625C-3453-326B-A4E23F181CC7}.Debug|x64.Build.0 = Debug|x64
+		{9855C0C2-625C-3453-326B-A4E23F181CC7}.Release|x64.ActiveCfg = Release|x64
+		{9855C0C2-625C-3453-326B-A4E23F181CC7}.Release|x64.Build.0 = Release|x64
+		{65473B69-2468-6FCE-187A-999B7BD1EBE8}.Debug|x64.ActiveCfg = Debug|x64
+		{65473B69-2468-6FCE-187A-999B7BD1EBE8}.Debug|x64.Build.0 = Debug|x64
+		{65473B69-2468-6FCE-187A-999B7BD1EBE8}.Release|x64.ActiveCfg = Release|x64
+		{65473B69-2468-6FCE-187A-999B7BD1EBE8}.Release|x64.Build.0 = Release|x64
+		{AA8C175F-F5F9-8C78-6A3F-CE2129AEC729}.Debug|x64.ActiveCfg = Debug|x64
+		{AA8C175F-F5F9-8C78-6A3F-CE2129AEC729}.Debug|x64.Build.0 = Debug|x64
+		{AA8C175F-F5F9-8C78-6A3F-CE2129AEC729}.Release|x64.ActiveCfg = Release|x64
+		{AA8C175F-F5F9-8C78-6A3F-CE2129AEC729}.Release|x64.Build.0 = Release|x64
+		{F1065C2A-FD27-8842-F736-73BCC3DA4F83}.Debug|x64.ActiveCfg = Debug|x64
+		{F1065C2A-FD27-8842-F736-73BCC3DA4F83}.Debug|x64.Build.0 = Debug|x64
+		{F1065C2A-FD27-8842-F736-73BCC3DA4F83}.Release|x64.ActiveCfg = Release|x64
+		{F1065C2A-FD27-8842-F736-73BCC3DA4F83}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
