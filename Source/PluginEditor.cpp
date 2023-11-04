@@ -14,7 +14,7 @@ Capacitor2Editor::Capacitor2Editor(Capacitor2Processor& p)
   // ===========================================================================
   // highpass config
   highPassSlider.setSliderStyle(juce::Slider::Rotary);
-  highPassSlider.setRange(0, 20000.0f, 1.0);
+  highPassSlider.setRange(0, 1000.0f, 1.0);
   highPassSlider.setTextBoxStyle(juce::Slider::TextBoxBelow, false, 100, 40);
   highPassSlider.setPopupDisplayEnabled(true, false, this);
   highPassSlider.setTextValueSuffix(" Hz");
@@ -27,7 +27,7 @@ Capacitor2Editor::Capacitor2Editor(Capacitor2Processor& p)
   // ===========================================================================
   // lowpass config
   lowPassSlider.setSliderStyle(juce::Slider::Rotary);
-  lowPassSlider.setRange(0, 20000.0f, 1.0);
+  lowPassSlider.setRange(1000, 20000.0f, 1.0);
   lowPassSlider.setTextBoxStyle(juce::Slider::TextBoxBelow, false, 100, 40);
   lowPassSlider.setPopupDisplayEnabled(true, false, this);
   lowPassSlider.setTextValueSuffix(" Hz");

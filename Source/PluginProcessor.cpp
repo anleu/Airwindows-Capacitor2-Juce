@@ -70,10 +70,10 @@ Capacitor2Processor::Capacitor2Processor()
 
   fpdL = 1.0;
   while (fpdL < 16386)
-    fpdL = rand() * UINT32_MAX;
+    fpdL = static_cast<uint32_t>(rand()) << 16 | static_cast<uint32_t>(rand());
   fpdR = 1.0;
   while (fpdR < 16386)
-    fpdR = rand() * UINT32_MAX;
+    fpdR = static_cast<uint32_t>(rand()) << 16 | static_cast<uint32_t>(rand());
 }
 
 Capacitor2Processor::~Capacitor2Processor() {}
