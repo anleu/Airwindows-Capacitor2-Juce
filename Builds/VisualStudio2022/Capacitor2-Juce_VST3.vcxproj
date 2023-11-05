@@ -173,10 +173,10 @@ if not exist &quot;$(OutDir)/Capacitor2-Juce.vst3\Contents\Resources\&quot; del 
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\juce-7.0.8-windows\JUCE\modules\juce_audio_plugin_client\VST3\juce_VST3ManifestHelper.cpp">
+    <ClCompile Include="S:\Workspace\juce-7.0.8-windows\JUCE\modules\juce_audio_plugin_client\VST3\juce_VST3ManifestHelper.cpp">
       <ExcludedFromBuild>true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="..\..\..\juce-7.0.8-windows\JUCE\modules\juce_audio_plugin_client\juce_audio_plugin_client_VST3.cpp">
+    <ClCompile Include="S:\Workspace\juce-7.0.8-windows\JUCE\modules\juce_audio_plugin_client\juce_audio_plugin_client_VST3.cpp">
       <ExcludedFromBuild>true</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="..\..\JuceLibraryCode\include_juce_audio_plugin_client_VST3.cpp"/>

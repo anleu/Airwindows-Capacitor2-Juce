@@ -77,10 +77,10 @@ public:
   double lowpassChase;
   double highpassChase;
   double wetChase;
+  double wet;
 
   double lowpassBaseAmount;
   double highpassBaseAmount;
-  double wet;
 
   double lastLowpass;
   double lastHighpass;
@@ -88,12 +88,6 @@ public:
 
   int32_t fpdL;
   int32_t fpdR;
-  // default stuff
-
-  float A;
-  float B;
-  float C;
-  float D;
 
 private:
   juce::AudioProcessorValueTreeState mState;

@@ -28,10 +28,6 @@ Capacitor2Processor::Capacitor2Processor()
   mix = new juce::AudioParameterFloat("mix", "Mix", 0.0f, 1.0f, 1.0f);
   addParameter(mix);
 
-  A = 1.0;
-  B = 0.0;
-  C = 0.0;
-  D = 1.0;
   iirHighpassAL = 0.0;
   iirHighpassBL = 0.0;
   iirHighpassCL = 0.0;
@@ -63,7 +59,6 @@ Capacitor2Processor::Capacitor2Processor()
   wetChase = 0.0;
   lowpassBaseAmount = 1.0;
   highpassBaseAmount = 0.0;
-  wet = 1.0;
   lastLowpass = 1000.0;
   lastHighpass = 1000.0;
   lastWet = 1000.0;
@@ -249,11 +244,11 @@ void Capacitor2Processor::processDoubleReplacing(const float** inputs,
   float* out1 = outputs[0];
   float* out2 = outputs[1];
 
-  lowpassChase = pow(A, 2);
-  highpassChase = pow(B, 2);
-  double nonLin = 1.0 + ((1.0 - C) * 6.0);
+  lowpassChase = pow((lowpass->get() + 1000) / 20000.0f, 2);
+  highpassChase = pow(highpass->get() / 20000.0f, 2);
+  double nonLin = 1.0 + ((1.0 - nonlin->get()) * 6.0);
   double nonLinTrim = 1.5 / cbrt(nonLin);
-  wetChase = D;
+  wetChase = mix->get();
   // should not scale with sample rate, because values reaching 1 are important
   // to its ability to bypass when set to max
   double lowpassSpeed = 300 / (fabs(lastLowpass - lowpassChase) + 1.0);
