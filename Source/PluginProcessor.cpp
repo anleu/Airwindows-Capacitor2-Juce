@@ -258,7 +258,7 @@ namespace audio_plugin {
 		float* out2 = outputs[1];
 
 		lowpassChase = pow(cutoffToParameter(lowpass->get(), 0.2), 2);
-		highpassChase = pow(cutoffToParameter(highpass->get(), 0.7), 2);
+		highpassChase = pow(cutoffToParameter(highpass->get(), 0.6), 2);
 		double nonLin = 1.0 + ((1.0 - nonlin->get()) * 6.0);
 		double nonLinTrim = 1.5 / cbrt(nonLin);
 		wetChase = mix->get();
